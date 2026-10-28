@@ -402,7 +402,7 @@ public class AnalizadorSemantico implements AstVisitor<Type, Ambito> {
                 + " DE LA CLASE " + duenia + " DESDE " + desde + ": " + regla, linea, columna);
     }
 
-    // ayuda a entender por que Padre -> Hija no se puede asignar
+    // AYUDA A ENTENDER POR QUE PADRE, HIJA NO SE PUEDE ASIGNAR
     private String pistaHerencia(Type destino, Type origen) {
         if (destino != null && origen != null && destino.esDefinidoPorUsuario() && origen.esDefinidoPorUsuario()
                 && esSubtipo(destino.getTypeName(), origen.getTypeName())) {
